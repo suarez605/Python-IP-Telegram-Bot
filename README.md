@@ -52,7 +52,7 @@ Docker:
   You have 2 options:
   - Build the image by yourself using:
     
-    docker build --build-arg TOKEN=YOUR_TOKEN_HERE --pull --rm -f "Dockerfile" -t rasputility:latest "."
+    docker build --build-arg --pull --rm -f "Dockerfile" -t rasputility:latest "."
 
   -Or pull the image from:
 
