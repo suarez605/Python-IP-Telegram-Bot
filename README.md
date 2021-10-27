@@ -56,7 +56,7 @@ Docker:
 
   -Or pull the image from:
 
-    https://hub.docker.com/repository/docker/suarez605/rasp-ip-bot
+    https://hub.docker.com/repository/docker/suarez605/python-ip-telegram-bot
 
   And running it with:
   
