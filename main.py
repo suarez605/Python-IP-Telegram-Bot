@@ -1,3 +1,4 @@
+#!/bin/python3
 import os
 from telegram import  Update, Message
 from telegram.utils.helpers import escape_markdown
