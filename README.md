@@ -11,35 +11,23 @@
 
 ---
 
-<p align="center"> 🤖 Few lines describing what your bot does.
+<p align="center"> 🤖 Bot to know the public IP of a machine were it is hosted.
     <br> 
 </p>
 
 ## 📝 Table of Contents
 
-- [About](#about)
-- [Demo / Working](#demo)
 - [How it works](#working)
 - [Usage](#usage)
 - [Getting Started](#getting_started)
 - [Deploying your own bot](#deployment)
-- [Built Using](#built_using)
-- [TODO](../TODO.md)
 - [Contributing](../CONTRIBUTING.md)
 - [Authors](#authors)
 
-## 🧐 About <a name = "about"></a>
-
-Bot to add and control some different utilities in your raspberry pi.
-
-## 🎥 Demo / Working <a name = "demo"></a>
-
-![Working](https://media.giphy.com/media/20NLMBm0BkUOwNljwv/giphy.gif)
 
 ## 💭 How it works <a name = "working"></a>
 
 It just creates a telegram bot ready to respond with the public IP address of his host machine.
-
 
 ## 🎈 Usage <a name = "usage"></a>
 
@@ -89,11 +77,6 @@ Just clone the repo into your favourite IDE.
 ## 🚀 Deploying your own bot <a name = "deployment"></a>
 
 docker run -e TELEGRAM_TOKEN=YOUR_TOKEN_HERE  rasp-ip-bot
-
-## ⛏️ Built Using <a name = "built_using"></a>
-
-- [PRAW](https://praw.readthedocs.io/en/latest/) - Python Reddit API Wrapper
-- [Heroku](https://www.heroku.com/) - SaaS hosting platform
 
 ## ✍️ Authors <a name = "authors"></a>
 
