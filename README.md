@@ -33,13 +33,13 @@ It just creates a telegram bot ready to respond with the public IP address of hi
 
 Standalone:
 
-  1 - Create the TELEGRAM_TOKEN env variable using your bot's token
-  2 - run : python3 ./main.py
+  1- Create the TELEGRAM_TOKEN env variable using your bot's token.
+  2- run : python3 ./main.py
 
 Docker:
   You have 2 options:
-  
-  - Build the image by yourself using:
+
+  -Build the image by yourself using:
     
     docker build --build-arg --pull --rm -f "Dockerfile" -t name:tag "."
 
