@@ -1,12 +1,7 @@
 #!/bin/python3
 import os
-from telegram import  Update, Message
-from telegram.utils.helpers import escape_markdown
-from telegram.ext import (
-    Updater,
-    CommandHandler,
-    CallbackContext
-)
+from telegram import  Update
+from telegram.ext import Updater, CommandHandler, CallbackContext
 import logging
 import requests
 
