@@ -59,9 +59,11 @@ Docker:
     https://hub.docker.com/repository/docker/suarez605/python-ip-telegram-bot
 
   <b>linux/arm64:</b>
+
     docker pull suarez605/python-ip-telegram-bot:latest
 
   <b>linux/arm64</b>
+  
     docker pull suarez605/python-ip-telegram-bot:latest-arm
 
   And running it with:
