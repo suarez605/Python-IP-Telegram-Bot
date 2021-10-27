@@ -38,6 +38,7 @@ Standalone:
 
 Docker:
   You have 2 options:
+  
   - Build the image by yourself using:
     
     docker build --build-arg --pull --rm -f "Dockerfile" -t name:tag "."
