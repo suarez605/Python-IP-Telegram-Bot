@@ -20,9 +20,9 @@ def get_public_ip(update: Update, callback: CallbackContext) -> None:
 
 
 def get_temperature_cpu(update: Update, callback: CallbackContext) -> None:
-    process = os.popen('vcgencmd measure_temp')
-    line = process.readline()
-    update.message.reply_text(f"{line[4:]} C")
+    process = os.popen('cat /sys/class/thermal/thermal_zone0/temp')
+    line = float(process.readline())/1000
+    update.message.reply_text(f"{line} C")
 
 
 def main() -> None:
