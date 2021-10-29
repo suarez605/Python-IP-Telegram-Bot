@@ -19,6 +19,12 @@ def get_public_ip(update: Update, callback: CallbackContext) -> None:
     update.message.reply_text(response.json()["ip"])
 
 
+def get_temperature_cpu(update: Update, callback: CallbackContext) -> None:
+    process = os.popen('vcgencmd measure_temp')
+    line = process.readline()
+    return line[4:]
+
+
 def main() -> None:
     """Start the bot."""
 
@@ -34,6 +40,7 @@ def main() -> None:
     dispatcher = updater.dispatcher
 
     dispatcher.add_handler(CommandHandler("get_public_ip", get_public_ip))
+    dispatcher.add_handler(CommandHandler("get_temperature_cpu", get_temperature_cpu))
     dispatcher.add_handler(CommandHandler("help", help))
 
     # Start the Bot
